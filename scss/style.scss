@@ -1,15 +1,15 @@
 //base
-@import "base/reset";
-@import "base/vars";
-@import "base/utils";
+@import "../scss/base/reset";
+@import "../scss/base/vars";
+@import "../scss/base/utils";
 
 //components
-@import "components/navbar";
-@import "components/footer";
+@import "../scss/components/navbar";
+@import "../scss/components/footer";
 
 //layouts
-@import "layouts/index.scss";
-@import "layouts/mediaqueries";
+@import "../scss/layouts/index.scss";
+@import "../scss/layouts/mediaqueries";
 
 @mixin hero {
     width: 100vw;
@@ -17,28 +17,45 @@
 }
 
 @mixin news {
-    width: 100%;
+  .card_container {
+  background-color: $lightColor;
+  width: 90%;
+  margin: 50px 20px;
+  border-radius: 25px;
+  .card_news {
     height: 100%;
-    background-color: $lightColor;
-    border-bottom: 20px solid $mainColor;
-    margin-bottom: 80px;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
     img {
-        width: 100%;
-        object-fit: cover;
-        border-top: 2px solid $backgroundColor;
-        border-bottom: 2px solid $backgroundColor;
-        box-shadow: 2px 2px 10px 0;
+      width: 100%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      height: 50%;
+      object-fit: cover
     }
     h2 {
-        padding: 10px 20px;
-        margin: 0;
+      text-align: left;
+      text-transform: uppercase;
+      padding: 15px 0 0 20px;
+      font-size: 30px;
     }
     p {
-        padding: 0 30px;
-        text-align: justify;
-        margin: 0 0 20px 0;
-        padding-bottom: 30px;
+      padding: 0 30px;
+      text-align: justify;
+      margin: 5px auto;
     }
+    .card_button {
+      width: 50%;
+      display: block;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 // navigation
@@ -93,19 +110,28 @@ main {
     width: 100%;
     height: 100%;
     background-color: $lightColor;
-    border-bottom: 20px solid $mainColor;
+    // border-bottom: 20px solid $mainColor;
     &_img {
         width: 100%;
         height: 400px;
         object-fit: cover;
     }
     h1 {
+        text-transform: uppercase;
         padding: 10px 0 0 20px;
+        margin: 5px auto;
+    }
+    .hero_subtitle {
+        padding: 0 30px;
+        margin: 0 auto;
+        span {
+          font-weight: bold;
+        }
     }
     .hero_p {
         padding: 0 30px;
         text-align: justify;
-        margin: 0 auto;
+        margin: 5px auto;
     }
     div {
         display: flex;
@@ -115,6 +141,7 @@ main {
     .hero_button {
         display: inline-block;
         justify-content: end;
+        margin-bottom: 5px;
     }
 }
 
@@ -124,20 +151,59 @@ main {
     h2 {
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
   }
+.carousel {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
   
 
 // noticias
-  .news {
-    @include news;
-    article button {
-      position: absolute;
-      top: 175%;
-      left: 80%;
+
+.card_container {
+  background-color: $lightColor;
+  width: 90%;
+  margin: 50px auto;
+  border-radius: 25px;
+  .card_news {
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    img {
+      width: 100%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      height: 50%;
+      object-fit: cover;
+    }
+    h2 {
+      text-align: left;
+      text-transform: uppercase;
+      padding: 15px 0 0 20px;
+      font-size: 30px;
+    }
+    p {
+      padding: 0 30px;
+      text-align: justify;
+      margin: 5px auto;
+    }
+    div {
+      text-align: center;
+    .card_button {
+      width: 50%;
+      margin: 10px auto 20px auto;
     }
   }
+  }
+}
+
+
+
+  // .card_container {
+  //   @include news;
+  // }
 
 
 // galeria
