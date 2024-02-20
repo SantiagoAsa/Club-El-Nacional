@@ -28,6 +28,7 @@
       <nav class="navbar navbar-expand-lg bg-body-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="assets/img/icons/navlogo.png" alt="El Nacional Logo"></a>
+          <a class="sub-navbar-brand" href="index.html"><img src="assets/img/icons/logocen.png" alt="El Nacional Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -72,18 +73,28 @@
     </header>
     <main>
       <!-- hero -->
+      <section class="hero">
+        <img
+          class="escudo"
+          src="assets/img/hero/hero1.jpg"
+          alt="Escudo del Club El Nacional sobre fondo de cancha de basquet"
+        />
+        <h1>Club El Nacional</h1>
+        <h2>Fundado en 1919</h2>
+      </section>
       <section class="hero_main">
-      <img class="hero_main_img" src="assets/img/basquetse.jpg" alt="" />
-      <h1>Victoria en casa</h1>
-      <p class="hero_subtitle">CEN <span>75</span> vs VILLA MITRE <span>71</span></p>
-      <p class="hero_p">Los dirigidos por Juan Sergio Palumbo siguieron con la racha victoriosa este fin de semana en nuestra cancha.</p>
-      <div>
-      <button class="hero_button btn btn-sm btn-primary">Ver más</button>
-      </div>
+        <h3>Noticia principal</h3>
+        <img class="hero_main_img" src="assets/img/basquetse.jpg" alt="" />
+        <h4>Victoria en casa</h4>
+        <p class="hero_subtitle">CEN <span>75</span> vs VILLA MITRE <span>71</span></p>
+        <p class="hero_p">Los dirigidos por Juan Sergio Palumbo siguieron con la racha victoriosa este fin de semana en nuestra cancha.</p>
+        <div>
+          <button class="hero_button btn btn-sm btn-primary">Ver más</button>
+        </div>
       </section>
       <!-- slider -->
       <section class="fixture_slider">
-        <h2>Fixture categorías mayores</h2>
+        <h3>Fixture categorías mayores</h3>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -124,112 +135,114 @@
         </div>
       </section>
       <!-- noticias -->
-      <!-- <article class="card">
-        <img src="assets/img/rugby4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Arrancamos el 2024</h5>
-          <p class="card-text">El próximo 5 de febrero comienza la pretemporada de las divisiones juveniles.<br>
-            Te esperamos en los entrenamientos los días lunes, martes y jueves de 18:30 hs a 20:30 hs.<br>
-            Contacto: Mariano Marsili - Coordinador | 2914222233.<br></p>
-          <a href="#" class="btn btn-primary">Rugby</a>
-        </div>
-      </article> -->
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/rugbypretemporada.jpg" alt="">
-          <h2>Arrancamos el 2024</h2>
-          <p>El próximo 5 de febrero comienza la pretemporada de las divisiones juveniles.<br>
-          Te esperamos en los entrenamientos los días lunes, martes y jueves de 18:30 hs a 20:30 hs.<br>
-          Contacto: Mariano Marsili - Coordinador | 2914222233.<br></p>
-          <div>
-          <button class="card_button btn btn-primary">Rugby</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/hockeybicampeon.jpg" alt="">
-          <h2>Bicampeones!</h2>
-          <p>Los caballeros lo hicieron otra vez, campeones del torneo clausura!<br>
-          Superando a Universitario por 3 a 2 en la final.<br>
-          Como si esto fuera poco, se llevan nuevamente la copa ABH, porque también ganaron el apertura!<br>
-          Felicitaciones a los jugadores y cuerpo técnico por la entrega de siempre.</p>
-          <div>
-          <button class="card_button btn btn-primary">Hockey</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/softbolnews.jpg" alt="">
-          <h2>Gran avance</h2>
-          <p>Para llegar a esto, no hubiésemos podido sin la ayuda de todos ellos y ellas.<br>
-          Muchas gracias a las personas que se acercaron a dar una mano para que la cancha de softbol quede tan linda.<br>
-          Es nuestra, la cuidamos y la trabajamos para que quede así de bien. Sigamos por este camino.<br></p>
-          <div>
-          <button class="card_button btn btn-primary">Softbol</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/hockeynoticia.jpg" alt="">
-          <h2>Orgullo CEN</h2>
-          <p>Yazmín Pallottini desde sus inicios en El Nacional hasta ser subcampeona con la selección argentina de hockey.<br>
-          El equipo de Las Leoncitas (@leoncitasoficial) consiguió el gran título de subcampeonas del mundo 2023 en la categoría sub 21 en el mundial disputado en Santiago de Chile el pasado 10 de diciembre.<br>
-          Fuimos testigos de su sacrificio, constancia y dedicación, es por eso que esta noticia nos llena de orgullo y satisfacción.<br>
-          A disfrutar de este presente, Yaz!<br>
-          Felicitaciones a todo el equipo!</p>
-          <div>
-          <button class="card_button btn btn-primary">Hockey</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/bienestar.jpg" alt="">
-          <h2>Nuevo beneficio</h2>
-          <p>Tenemos un nuevo beneficio para todos los socios del CEN.<br>
-          A partir de Octubre, presentando el carnet en Bienestar Animal, obtenes grandes descuentos según la forma de pago que realices.<br>
-          Ser socio te conviene!</p>
-          <div>
-          <button class="card_button btn btn-primary">Socios</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/rugbynoticia.jpg" alt="">
-          <h2>Dos cracks!</h2>
-          <p>Ulises Alonso y Juan Fueyo, jugadores juveniles de nuestro club, integraron el seleccionado de la Unión de Rugby del Sur que participó del "Select 12" realizado en Comodoro Rivadavia.<br>
-          El campeonato Argentino Juvenil Zona Desarrollo Select 12 es un importante torneo federal que otorga plazas para el Campeonato Argentino Juvenil M17.</p>
-          <div>
-          <button class="card_button btn btn-primary">Rugby</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/softbolcampeones.jpg" alt="">
-          <h2>Campeones!</h2>
-          <p>Felicitamos a la primera división por obtener el primer lugar en la copa Revolución de Mayo que se disputó en la localidad de Los Toldos.<br>
-          Tremendo esfuerzo por parte del equipo y nuestro jefe de equipo. Se disfrutó y sobre todo se exprimió hasta la última gota de softbol.<br>
-          Muchas gracias a @viamontesoftbol por la organización y la atención. Esperamos vernos pronto.<br>
-          Vamos NACIO!</p>
-          <div>
-          <button class="card_button btn btn-primary">Softbol</button>
-        </div>
-        </article>
-      </section>
-      <section class="card_container">
-        <article class="card_news">
-          <img src="assets/img/index/redimensionadas/camiseta.jpg" alt="">
-          <h2>La piel</h2>
-          <p>Nuevo diseño de camiseta para la categoría femenina de basquet. Un gran trabajo del artista Francisco Lopez Arambarri.</p>
-          <div>
-          <button class="card_button btn btn-primary">Basquet</button>
-        </div>
-        </article>
+      <section class="news">
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/rugbypretemporada.jpg" alt="">
+            <div>
+              <h4>Arrancamos el 2024</h4>
+              <p>El próximo 5 de febrero comienza la pretemporada de las divisiones juveniles.<br>
+              Te esperamos en los entrenamientos los días lunes, martes y jueves de 18:30 hs a 20:30 hs.<br>
+              Contacto: Mariano Marsili - Coordinador | 2914222233.<br></p>
+              <a class="card_button btn btn-primary">Rugby</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/hockeybicampeon.jpg" alt="">
+            <div>
+              <h4>Bicampeones!</h4>
+              <p>Los caballeros lo hicieron otra vez, campeones del torneo clausura!<br>
+              Superando a Universitario por 3 a 2 en la final.<br>
+              Como si esto fuera poco, se llevan nuevamente la copa ABH, porque también ganaron el apertura!<br>
+              Felicitaciones a los jugadores y cuerpo técnico por la entrega de siempre.</p>
+              <a class="card_button btn btn-primary">Hockey</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/softbolnews.jpg" alt="">
+            <div>
+              <h4>Gran avance</h4>
+              <p>Para llegar a esto, no hubiésemos podido sin la ayuda de todos ellos y ellas.<br>
+              Muchas gracias a las personas que se acercaron a dar una mano para que la cancha de softbol quede tan linda.<br>
+              Es nuestra, la cuidamos y la trabajamos para que quede así de bien. Sigamos por este camino.<br></p>
+              <a class="card_button btn btn-primary">Softbol</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/hockeynoticia.jpg" alt="">
+            <div>
+              <h4>Orgullo CEN</h4>
+              <p>Yazmín Pallottini junto al equipo de Las Leoncitas (@leoncitasoficial), cosechó el gran título de subcampeona del mundo 2023 en la categoría sub 21 del mundial disputado en Santiago de Chile el pasado 10 de diciembre.<br>
+              Fuimos testigos de su sacrificio, constancia y dedicación, esta noticia nos llena de orgullo.<br>
+              A disfrutar de este presente, Yaz!</p>
+              <a class="card_button btn btn-primary">Hockey</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/bienestar.jpg" alt="">
+            <div>
+              <h4>Nuevo beneficio</h4>
+              <p>Tenemos un nuevo beneficio para todos los socios del CEN.<br>
+              A partir de Octubre, presentando el carnet en Bienestar Animal, obtenes grandes descuentos según la forma de pago que realices.<br>
+              Ser socio te conviene!</p>
+              <a class="card_button btn btn-primary">Socios</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/rugbynoticia.jpg" alt="">
+            <div>
+              <h4>Dos cracks!</h4>
+              <p>Ulises Alonso y Juan Fueyo, jugadores juveniles de nuestro club, integraron el seleccionado de la Unión de Rugby del Sur que participó del "Select 12" realizado en Comodoro Rivadavia.<br>
+              El campeonato Argentino Juvenil Zona Desarrollo Select 12 es un importante torneo federal que otorga plazas para el Campeonato Argentino Juvenil M17.</p>
+              <a class="card_button btn btn-primary">Rugby</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/softbolcampeones.jpg" alt="">
+            <div>
+              <h4>Campeones!</h4>
+              <p>Felicitamos a la primera división por obtener el primer lugar en la copa Revolución de Mayo que se disputó en la localidad de Los Toldos.<br>
+              Tremendo esfuerzo por parte del equipo y nuestro jefe de equipo. Se disfrutó y sobre todo se exprimió hasta la última gota de softbol.<br>
+              Muchas gracias a @viamontesoftbol por la organización y la atención. Esperamos vernos pronto.<br>
+              Vamos NACIO!</p>
+              <a class="card_button btn btn-primary">Softbol</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/camiseta.jpg" alt="">
+            <div>
+              <h4>La piel</h4>
+              <p>Nuevo diseño de camiseta para la categoría femenina de basquet. Un gran trabajo del artista Francisco Lopez Arambarri.</p>
+              <a class="card_button btn btn-primary">Basquet</a>
+            </div>
+          </article>
+        </section>
+        <section class="card_container">
+          <article class="card_news">
+            <img src="assets/img/index/redimensionadas/macro.jpg" alt="">
+            <div>
+              <h4>Reintegro</h4>
+              <p>Seguimos sumando beneficios para los socios del CEN.<br>
+                Ahora con Banco Macro, 25% de reintegro abonando con débito automático. Tope de reintegro $1500.<br>
+                Ser socio te conviene!</p>
+              <a class="card_button btn btn-primary">Socios</a>
+            </div>
+          </article>
+        </section>
       </section>
       <!-- mini galeria -->
       <section class="galery">
@@ -254,7 +267,7 @@
           <img src="assets/img/index/asociate.jpg" alt="">
         </article>
         <form>
-          <h4 class="form_title">ESCRIBINOS</h4>
+          <h5 class="form_title">ESCRIBINOS</h5>
           <input
             class="input"
             type="text"
@@ -380,8 +393,8 @@
       </section>
       <div class="newslatter_div">
         <h5>Suscribite a nuestro newslatter</h5>
-        <label class="email pb-3" for="email">Ingresa tu correo electrónico:</label>
-        <div class="input-group mb-3 p-0">
+        <label class="email pb-2" for="email">Ingresa tu correo electrónico:</label>
+        <div class="input-group pb-3 p-0">
           <input type="text" class="form-control" placeholder="Mi correo" aria-label="Username">
           <span class="input-group-text">@</span>
           <input type="text" class="form-control" placeholder="gmail.com" aria-label="Server">
