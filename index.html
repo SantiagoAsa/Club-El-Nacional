@@ -18,52 +18,84 @@
       crossorigin="anonymous"
     />
     <!-- link google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Club El Nacional</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="assets/img/icons/navlogo.png" alt="El Nacional Logo"></a>
-          <a class="sub-navbar-brand" href="index.html"><img src="assets/img/icons/logocen.png" alt="El Nacional Logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/icons/navlogo.png" alt="El Nacional Logo"
+          /></a>
+          <a class="sub-navbar-brand" href="index.html"
+            ><img src="assets/img/icons/logocen.png" alt="El Nacional Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Actividades
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Basquet</a></li>
-                  <li><a class="dropdown-item" href="#">Rugby</a></li>
-                  <li><a class="dropdown-item" href="#">Hockey</a></li>
-                  <li><a class="dropdown-item" href="#">Softbol</a></li>
+                  <li>
+                    <a class="dropdown-item" href="pages/basquet.html"
+                      >Basquet</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="pages/rugby.html"">Rugby</a></li>
+                  <li><a class="dropdown-item" href="pages/hockey.html">Hockey</a></li>
+                  <li><a class="dropdown-item" href="pages/softbol.html">Softbol</a></li>
                 </ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Instalaciones</a>
-                </li>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Historia</a>
+                <a class="nav-link" href="pages/historia.html">Historia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Acceso Socios
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
-                  <li><a class="dropdown-item" href="#">Comisión directiva</a></li>
+                  <li><a class="dropdown-item" href="https://elnacional.brio.club/accounts/login/?next=/" target="_blank">Mi cuenta</a></li>
+                  <li>
+                    <a class="dropdown-item" href="pages/novedades.html">Novedades</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -84,12 +116,21 @@
       </section>
       <section class="hero_main">
         <h3>Noticia principal</h3>
-        <img class="hero_main_img" src="assets/img/basquetse.jpg" alt="" />
+        <img class="hero_main_img" src="assets/img/basquetse.jpg" alt="Jugador de basquet del club el nacional picando la pelota en ataque" />
         <h4>Victoria en casa</h4>
-        <p class="hero_subtitle">CEN <span>75</span> vs VILLA MITRE <span>71</span></p>
-        <p class="hero_p">Los dirigidos por Juan Sergio Palumbo siguieron con la racha victoriosa este fin de semana en nuestra cancha.</p>
+        <p class="hero_subtitle">
+          CEN <span>75</span> vs VILLA MITRE <span>71</span>
+        </p>
+        <p class="hero_p">
+          Los dirigidos por Juan Sergio Palumbo siguieron con la racha
+          victoriosa este fin de semana en nuestra cancha.
+        </p>
         <div>
-          <button class="hero_button btn btn-sm btn-primary">Ver más</button>
+          <a
+            class="hero_button btn btn-sm btn-primary"
+            href="pages/basquet.html"
+            >Ver más</a
+          >
         </div>
       </section>
       <!-- slider -->
@@ -97,39 +138,113 @@
         <h3>Fixture categorías mayores</h3>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
           </div>
-          <div class="carousel-inner border shadow p-3 bg-body-tertiary rounded-4">
+          <div
+            class="carousel-inner border shadow p-3 bg-body-tertiary rounded-4"
+          >
             <div class="carousel-item active">
-              <img src="assets/img/sliderfixture/fixturebasqmas.jpg" class="d-block w-100" alt="...">
+              <img
+                src="assets/img/sliderfixture/fixturebasqmas.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/sliderfixture/fixturebasqfem.jpg" class="d-block w-100" alt="...">
+              <img
+                src="assets/img/sliderfixture/fixturebasqfem.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/sliderfixture/fixturerugby.jpg" class="d-block w-100" alt="...">
+              <img
+                src="assets/img/sliderfixture/fixturerugby.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/sliderfixture/fixturehockfem.jpg" class="d-block w-100" alt="...">
+              <img
+                src="assets/img/sliderfixture/fixturehockfem.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/sliderfixture/fixturehockmas.jpg" class="d-block w-100" alt="...">
+              <img
+                src="assets/img/sliderfixture/fixturehockmas.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/sliderfixture/fixturesoft.jpg" class="d-block w-100" alt="...">
+              <img
+                src="assets/img/sliderfixture/fixturesoft.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-secondary rounded" aria-hidden="true"></span>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-secondary rounded"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-secondary rounded" aria-hidden="true"></span>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-secondary rounded"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -138,108 +253,187 @@
       <section class="news">
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/rugbypretemporada.jpg" alt="">
+            <img
+              src="assets/img/index/redimensionadas/rugbypretemporada.jpg"
+              alt=""
+            />
             <div>
               <h4>Arrancamos el 2024</h4>
-              <p>El próximo 5 de febrero comienza la pretemporada de las divisiones juveniles.<br>
-              Te esperamos en los entrenamientos los días lunes, martes y jueves de 18:30 hs a 20:30 hs.<br>
-              Contacto: Mariano Marsili - Coordinador | 2914222233.<br></p>
-              <a class="card_button btn btn-primary">Rugby</a>
+              <p>
+                El próximo 5 de febrero comienza la pretemporada de las
+                divisiones juveniles.<br />
+                Te esperamos en los entrenamientos los días lunes, martes y
+                jueves de 18:30 hs a 20:30 hs.<br />
+                Contacto: Mariano Marsili - Coordinador | 2914222233.<br />
+              </p>
+              <a class="card_button btn btn-primary" href="pages/rugby.html"
+                >Rugby</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/hockeybicampeon.jpg" alt="">
+            <img
+              src="assets/img/index/redimensionadas/hockeybicampeon.jpg"
+              alt=""
+            />
             <div>
               <h4>Bicampeones!</h4>
-              <p>Los caballeros lo hicieron otra vez, campeones del torneo clausura!<br>
-              Superando a Universitario por 3 a 2 en la final.<br>
-              Como si esto fuera poco, se llevan nuevamente la copa ABH, porque también ganaron el apertura!<br>
-              Felicitaciones a los jugadores y cuerpo técnico por la entrega de siempre.</p>
-              <a class="card_button btn btn-primary">Hockey</a>
+              <p>
+                Los caballeros lo hicieron otra vez, campeones del torneo
+                clausura!<br />
+                Superando a Universitario por 3 a 2 en la final.<br />
+                Como si esto fuera poco, se llevan nuevamente la copa ABH,
+                porque también ganaron el apertura!<br />
+                Felicitaciones a los jugadores y cuerpo técnico por la entrega
+                de siempre.
+              </p>
+              <a class="card_button btn btn-primary" href="pages/hockey.html"
+                >Hockey</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/softbolnews.jpg" alt="">
+            <img
+              src="assets/img/index/redimensionadas/softbolnews.jpg"
+              alt=""
+            />
             <div>
               <h4>Gran avance</h4>
-              <p>Para llegar a esto, no hubiésemos podido sin la ayuda de todos ellos y ellas.<br>
-              Muchas gracias a las personas que se acercaron a dar una mano para que la cancha de softbol quede tan linda.<br>
-              Es nuestra, la cuidamos y la trabajamos para que quede así de bien. Sigamos por este camino.<br></p>
-              <a class="card_button btn btn-primary">Softbol</a>
+              <p>
+                Para llegar a esto, no hubiésemos podido sin la ayuda de todos
+                ellos y ellas.<br />
+                Muchas gracias a las personas que se acercaron a dar una mano
+                para que la cancha de softbol quede tan linda.<br />
+                Es nuestra, la cuidamos y la trabajamos para que quede así de
+                bien. Sigamos por este camino.<br />
+              </p>
+              <a class="card_button btn btn-primary" href="pages/softbol.html"
+                >Softbol</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/hockeynoticia.jpg" alt="">
+            <img
+              src="assets/img/index/redimensionadas/hockeynoticia.jpg"
+              alt=""
+            />
             <div>
               <h4>Orgullo CEN</h4>
-              <p>Yazmín Pallottini junto al equipo de Las Leoncitas (@leoncitasoficial), cosechó el gran título de subcampeona del mundo 2023 en la categoría sub 21 del mundial disputado en Santiago de Chile el pasado 10 de diciembre.<br>
-              Fuimos testigos de su sacrificio, constancia y dedicación, esta noticia nos llena de orgullo.<br>
-              A disfrutar de este presente, Yaz!</p>
-              <a class="card_button btn btn-primary">Hockey</a>
+              <p>
+                Yazmín Pallottini junto al equipo de Las Leoncitas
+                (@leoncitasoficial), cosechó el gran título de subcampeona del
+                mundo 2023 en la categoría sub 21 del mundial disputado en
+                Santiago de Chile el pasado 10 de diciembre.<br />
+                Fuimos testigos de su sacrificio, constancia y dedicación, esta
+                noticia nos llena de orgullo.<br />
+                A disfrutar de este presente, Yaz!
+              </p>
+              <a class="card_button btn btn-primary" href="pages/hockey.html"
+                >Hockey</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/bienestar.jpg" alt="">
+            <img src="assets/img/index/redimensionadas/bienestar.jpg" alt="" />
             <div>
               <h4>Nuevo beneficio</h4>
-              <p>Tenemos un nuevo beneficio para todos los socios del CEN.<br>
-              A partir de Octubre, presentando el carnet en Bienestar Animal, obtenes grandes descuentos según la forma de pago que realices.<br>
-              Ser socio te conviene!</p>
-              <a class="card_button btn btn-primary">Socios</a>
+              <p>
+                Tenemos un nuevo beneficio para todos los socios del CEN.<br />
+                A partir de Octubre, presentando el carnet en Bienestar Animal,
+                obtenes grandes descuentos según la forma de pago que
+                realices.<br />
+                Ser socio te conviene!
+              </p>
+              <a class="card_button btn btn-primary" href="pages/novedades.html"
+                >Socios</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/rugbynoticia.jpg" alt="">
+            <img
+              src="assets/img/index/redimensionadas/rugbynoticia.jpg"
+              alt=""
+            />
             <div>
               <h4>Dos cracks!</h4>
-              <p>Ulises Alonso y Juan Fueyo, jugadores juveniles de nuestro club, integraron el seleccionado de la Unión de Rugby del Sur que participó del "Select 12" realizado en Comodoro Rivadavia.<br>
-              El campeonato Argentino Juvenil Zona Desarrollo Select 12 es un importante torneo federal que otorga plazas para el Campeonato Argentino Juvenil M17.</p>
-              <a class="card_button btn btn-primary">Rugby</a>
+              <p>
+                Ulises Alonso y Juan Fueyo, jugadores juveniles de nuestro club,
+                integraron el seleccionado de la Unión de Rugby del Sur que
+                participó del "Select 12" realizado en Comodoro Rivadavia.<br />
+                El campeonato Argentino Juvenil Zona Desarrollo Select 12 es un
+                importante torneo federal que otorga plazas para el Campeonato
+                Argentino Juvenil M17.
+              </p>
+              <a class="card_button btn btn-primary" href="pages/rugby.html"
+                >Rugby</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/softbolcampeones.jpg" alt="">
+            <img
+              src="assets/img/index/redimensionadas/softbolcampeones.jpg"
+              alt=""
+            />
             <div>
               <h4>Campeones!</h4>
-              <p>Felicitamos a la primera división por obtener el primer lugar en la copa Revolución de Mayo que se disputó en la localidad de Los Toldos.<br>
-              Tremendo esfuerzo por parte del equipo y nuestro jefe de equipo. Se disfrutó y sobre todo se exprimió hasta la última gota de softbol.<br>
-              Muchas gracias a @viamontesoftbol por la organización y la atención. Esperamos vernos pronto.<br>
-              Vamos NACIO!</p>
-              <a class="card_button btn btn-primary">Softbol</a>
+              <p>
+                Felicitamos a la primera división por obtener el primer lugar en
+                la copa Revolución de Mayo que se disputó en la localidad de Los
+                Toldos.<br />
+                Tremendo esfuerzo por parte del equipo y nuestro jefe de equipo.
+                Se disfrutó y sobre todo se exprimió hasta la última gota de
+                softbol.<br />
+                Muchas gracias a @viamontesoftbol por la organización y la
+                atención. Esperamos vernos pronto.<br />
+                Vamos NACIO!
+              </p>
+              <a class="card_button btn btn-primary" href="pages/softbol.html"
+                >Softbol</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/camiseta.jpg" alt="">
+            <img src="assets/img/index/redimensionadas/camiseta.jpg" alt="" />
             <div>
               <h4>La piel</h4>
-              <p>Nuevo diseño de camiseta para la categoría femenina de basquet. Un gran trabajo del artista Francisco Lopez Arambarri.</p>
-              <a class="card_button btn btn-primary">Basquet</a>
+              <p>
+                Nuevo diseño de camiseta para la categoría femenina de basquet.
+                Un gran trabajo del artista Francisco Lopez Arambarri.
+              </p>
+              <a class="card_button btn btn-primary" href="pages/basquet.html"
+                >Basquet</a
+              >
             </div>
           </article>
         </section>
         <section class="card_container">
           <article class="card_news">
-            <img src="assets/img/index/redimensionadas/macro.jpg" alt="">
+            <img src="assets/img/index/redimensionadas/macro.jpg" alt="" />
             <div>
               <h4>Reintegro</h4>
-              <p>Seguimos sumando beneficios para los socios del CEN.<br>
-                Ahora con Banco Macro, 25% de reintegro abonando con débito automático. Tope de reintegro $1500.<br>
-                Ser socio te conviene!</p>
-              <a class="card_button btn btn-primary">Socios</a>
+              <p>
+                Seguimos sumando beneficios para los socios del CEN.<br />
+                Ahora con Banco Macro, 25% de reintegro abonando con débito
+                automático. Tope de reintegro $1500.<br />
+                Ser socio te conviene!
+              </p>
+              <a class="card_button btn btn-primary" href="pages/novedades.html"
+                >Socios</a
+              >
             </div>
           </article>
         </section>
@@ -247,24 +441,24 @@
       <!-- mini galeria -->
       <section class="galery">
         <article class="img_content">
-          <img src="assets/img/instalaciones/inst1-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst2-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst3-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst4-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst5-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst6-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst7-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst8-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst9-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst10-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst11-min.jpg" alt="">
-          <img src="assets/img/instalaciones/inst12-min.jpg" alt="">
+          <img src="assets/img/instalaciones/inst1-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst2-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst3-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst4-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst5-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst6-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst7-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst8-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst9-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst10-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst11-min.jpg" alt="" />
+          <img src="assets/img/instalaciones/inst12-min.jpg" alt="" />
         </article>
       </section>
       <!-- formulario -->
       <section class="form" id="contacto">
         <article class="img_formulario">
-          <img src="assets/img/index/asociate.jpg" alt="">
+          <img src="assets/img/index/asociate.jpg" alt="" />
         </article>
         <form>
           <h5 class="form_title">ESCRIBINOS</h5>
@@ -298,9 +492,15 @@
             placeholder="Mensaje"
           ></textarea>
           <div class="term">
-          <input class="data4" type="checkbox" name="checkbox" id="" />
-          <label for="checkbox">Acepto los términos y condiciones</label>
-          <input class="submit btn btn-sm btn-primary w-50" type="submit" value="Enviar" name="" id="" />
+            <input class="data4" type="checkbox" name="checkbox" id="" />
+            <label for="checkbox">Acepto los términos y condiciones</label>
+            <input
+              class="submit btn btn-sm btn-primary w-50"
+              type="submit"
+              value="Enviar"
+              name=""
+              id=""
+            />
           </div>
         </form>
         <p>
@@ -378,13 +578,13 @@
           <li class="footer_link"><a href="pages/hockey.html">HOCKEY</a></li>
           <li class="footer_link"><a href="pages/softbol.html">SOFTBOL</a></li>
           <li class="footer_link">
-            <a href="pages/comision.html">COMISION DIRECTIVA</a>
+            <a href="pages/novedades.html">NOVEDADES SOCIOS</a>
           </li>
           <li class="footer_link">
             <a href="pages/historia.html">HISTORIA</a>
           </li>
           <li class="footer_link">
-            <a href="pages/contacto.html">CONTACTO</a>
+            <a href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
@@ -393,13 +593,31 @@
       </section>
       <div class="newslatter_div">
         <h5>Suscribite a nuestro newslatter</h5>
-        <label class="email pb-2" for="email">Ingresa tu correo electrónico:</label>
+        <label class="email pb-2" for="email"
+          >Ingresa tu correo electrónico:</label
+        >
         <div class="input-group pb-3 p-0">
-          <input type="text" class="form-control" placeholder="Mi correo" aria-label="Username">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Mi correo"
+            aria-label="Username"
+          />
           <span class="input-group-text">@</span>
-          <input type="text" class="form-control" placeholder="gmail.com" aria-label="Server">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="gmail.com"
+            aria-label="Server"
+          />
         </div>
-        <input class="btn btn-sm btn-primary w-50" type="submit" name="enviar" id="enviar" value="Enviar" />
+        <input
+          class="btn btn-sm btn-primary w-50"
+          type="submit"
+          name="enviar"
+          id="enviar"
+          value="Enviar"
+        />
       </div>
       <section class="icons">
         <a href="https://facebook.com/CENoficial" target="_blank"

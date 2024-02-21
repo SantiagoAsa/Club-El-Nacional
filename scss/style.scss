@@ -5,7 +5,7 @@
 
 //components
 @import "../scss/components/navbar";
-@import "../scss/components/footer";
+@import "../scss/components/navbar";
 
 //layouts
 @import "../scss/layouts/index";
@@ -403,7 +403,299 @@ footer {
   width: 30px;
 }
 
-// // mediaqueries
+// socios
+.socios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 100px 0;
+  gap: 20px;
+  width: 80%;
+}
+
+.aside_socios {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+  max-width: 100%;
+  .card {
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  }
+  img {
+    height: 200px;
+    object-fit: scale-down;
+  }
+  h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
+.span_nombre {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3ec2ff;
+  font-weight: bold;
+}
+.span_puesto {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #32317e;
+  font-weight: bold;
+}
+.span_nro {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #32317e;
+}
+.card:hover .span_nombre {
+  color: #3ec2ff;
+  text-shadow: 0 0 2px #3ec2ff;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.container_socios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  .card_socios {
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+  }
+  img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+  }
+  div {
+    padding: 25px;
+    background-color: $grayColor;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    h4 {
+      text-transform: uppercase;
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 15px;
+      padding-top: 10px;
+      color: $backgroundColor;
+    }
+  }
+}
+
+// basquet.html
+
+.hero_basquet img {
+  width: 100%;
+}
+
+.hero_basquet {
+  width: 100%;
+  display: none;
+}
+
+.main_container {
+  background-image: url(../assets/img/fondogradient.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 20px;
+  border-bottom: 20px solid $mainColor;
+}
+
+.basquet_news {
+  width: 100%;
+  height: 100%;
+  background-color: $lightColor;
+  &_img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 20px solid $mainColor;
+  }
+  h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 0 20px;
+    margin: 5px auto;
+  }
+  &_subtitle {
+    font-size: 20px;
+    padding: 0 30px;
+    margin: 0 auto;
+    span {
+      font-weight: bold;
+    }
+  }
+  &_p {
+    font-size: 16px;
+    padding: 30px 30px 70px 30px;
+    text-align: justify;
+    margin: 5px auto;
+  }
+}
+
+.container_basquet {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 5px;
+  padding: 100px 0;
+}
+
+.section_basquet {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section_basquet p {
+  font-size: 16px;
+  padding: 16px;
+  margin: 0;
+  background-color: #424242;
+  color: rgb(200, 200, 200);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+.slider_basquet {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 25px;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+
+.slider_basquet img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  transition: all 400ms;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+.slider_basquet img:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.slider_basquet img:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: -2;
+}
+
+.slider_basquet img:hover {
+  transform: scale(1);
+}
+
+.article_horario_basquet {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.article_horario_basquet h2 {
+  font-size: 30px;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(200, 200, 200);
+  background-color: #424242;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+.horario {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 20px;
+  padding: 0;
+}
+
+.horario article {
+  background-color: #424242;
+  height: 100%;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+.horario article p {
+  font-size: 16px;
+  color: rgb(200, 200, 200);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.horario article p span {
+  color: #3ec2ff;
+  font-weight: bold;
+}
+
+.horario article:hover p span {
+  text-shadow: 0 0 10px #3ec2ff;
+}
+
+// // // mediaqueries
+@media (min-width: 680px) {
+  .section_basquet p {
+    font-size: 18px;
+    padding: 16px;
+  }
+  .slider_basquet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .slider_basquet img:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .slider_basquet img:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: -2;
+  }
+  .slider_basquet img:hover {
+    transform: scale(1);
+  }
+  .article_horario_basquet h2 {
+    font-size: 30px;
+  }
+  .horario article p {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 768px) {
   .escudo {
     display: block;
@@ -486,6 +778,23 @@ footer {
   .img_sponsor {
     width: 120px;
   }
+
+  .main_container {
+    padding-top: 100px;
+  }
+  .basquet_news {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    &_img {
+      height: 550px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -506,6 +815,38 @@ footer {
   }
   .img_sponsor {
     width: 130px;
+  }
+  .container_basquet {
+    gap: 10px;
+    margin: 100px auto;
+  }
+  .section_basquet {
+    padding: 5px;
+  }
+  .section_basquet p {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .slider_basquet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 5px;
+  }
+  .slider_basquet img:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .slider_basquet img:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+  .slider_basquet img:hover {
+    transform: scale(1.1);
+  }
+  .basquet_news {
+    &_img {
+      height: 600px;
+    }
   }
 }
 
@@ -530,6 +871,26 @@ footer {
   }
   .img_sponsor {
     width: 140px;
+  }
+  .basquet_news {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container_basquet {
+    padding: 0;
+  }
+  .slider_basquet {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .slider_basquet img:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .slider_basquet img:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
   }
 }
 
