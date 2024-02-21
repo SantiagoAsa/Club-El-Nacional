@@ -661,8 +661,101 @@ footer {
 .horario article:hover p span {
   text-shadow: 0 0 10px #3ec2ff;
 }
+// softbol
+
+.hero_softbol img {
+  width: 100%;
+}
+.hero_softbol {
+  width: 100%;
+  display: none;
+}
+
+.container_softbol {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 10px 50px 10px;
+  .description_softbol {
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    padding: 15px;
+  }
+  .container_players {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    p {
+      background-color: $lightColor;
+      border-radius: 25px;
+      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 15px;
+      font-weight: bold;
+      margin: 0 auto 20px auto;
+    }
+    img {
+      border-radius: 25px;
+      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      margin: 20px 10px;
+      width: 100%;
+    }
+  }
+}
+.article_horario_softbol {
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+  div h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+  p {
+    font-size: 18px;
+  }
+  p span {
+    font-weight: bold;
+  }
+}
+.lista_softbol {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  h3 {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+  }
+  .spoty_softbol {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+  }
+}
 
 // // // mediaqueries
+
 @media (min-width: 680px) {
   .section_basquet p {
     font-size: 18px;
@@ -688,6 +781,11 @@ footer {
   }
   .horario article p {
     font-size: 16px;
+  }
+  .container_players {
+    img {
+      max-width: 300px;
+    }
   }
 }
 
@@ -774,9 +872,6 @@ footer {
     width: 120px;
   }
 
-  .main_container {
-    padding-top: 100px;
-  }
   .basquet_news {
     width: 80%;
     margin: 0 auto;
@@ -789,6 +884,27 @@ footer {
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
     }
+  }
+  .hero_softbol {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .hero_basquet {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .hero_rugby {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .hero_hockey {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
   }
 }
 
@@ -873,6 +989,11 @@ footer {
     margin: 0 auto;
     gap: 20px;
   }
+  .card:hover .span_nombre {
+    font-size: 22px;
+    text-shadow: 2px 4px 5px $thirdColor;
+    transition: 0.3s;
+  }
 }
 
 @media (min-width: 1290px) {
@@ -955,8 +1076,5 @@ footer {
   }
   .img_sponsor {
     width: 150px;
-  }
-  .main_socios {
-    grid-template-columns: 75% 25%;
   }
 }
