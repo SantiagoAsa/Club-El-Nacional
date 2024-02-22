@@ -1,0 +1,90 @@
+.hero_softbol img {
+  width: 100%;
+}
+.hero_softbol {
+  width: 100%;
+  display: none;
+}
+
+.container_softbol {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 10px 50px 10px;
+  .description_softbol {
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    padding: 15px;
+  }
+  .container_players {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    p {
+      background-color: $lightColor;
+      border-radius: 25px;
+      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 15px;
+      font-weight: bold;
+      margin: 0 auto 20px auto;
+    }
+    img {
+      border-radius: 25px;
+      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      margin: 20px 10px;
+      width: 100%;
+    }
+  }
+}
+.article_horario_softbol {
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+  div h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+  p {
+    font-size: 18px;
+  }
+  p span {
+    font-weight: bold;
+  }
+}
+.lista_softbol {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  h3 {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+  }
+  .spoty_softbol {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+  }
+}

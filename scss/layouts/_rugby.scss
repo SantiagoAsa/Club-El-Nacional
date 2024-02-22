@@ -1,0 +1,70 @@
+.hero_rugby img {
+  width: 100%;
+}
+.hero_rugby {
+  width: 100%;
+  display: none;
+}
+.description_rugby {
+  width: 80%;
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  padding: 15px;
+  margin: 0 auto;
+  p {
+    text-align: justify;
+  }
+}
+.slider_rugby {
+  width: 80%;
+  margin: 50px auto;
+  img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+  }
+}
+.article_horario_rugby {
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+  div h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+  p {
+    font-size: 14px;
+  }
+  p span {
+    font-weight: bold;
+  }
+}
+.video_rugby {
+  width: 80%;
+  height: 100%;
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  h3 {
+    text-transform: uppercase;
+  }
+  .youtube_rugby {
+    width: 90%;
+    min-height: 300px;
+    max-height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

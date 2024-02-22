@@ -33,6 +33,10 @@
     min-height: 400px;
     max-height: 800px;
   }
+  .video_hockey .youtube_hockey {
+    min-height: 400px;
+    max-height: 800px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -178,6 +182,22 @@
     min-height: 500px;
     max-height: 800px;
   }
+  .slider_hockey {
+    width: 80%;
+    text-align: center;
+    img {
+      display: inline-block;
+      width: 270px;
+      height: 350px;
+      object-fit: cover;
+      margin: 10px;
+    }
+  }
+
+  .video_hockey .youtube_hockey {
+    min-height: 500px;
+    max-height: 800px;
+  }
 }
 
 @media (min-width: 792px) {
@@ -270,6 +290,10 @@
     min-height: 600px;
     max-height: 900px;
   }
+  .video_hockey .youtube_hockey {
+    min-height: 600px;
+    max-height: 900px;
+  }
 }
 
 @media (min-width: 1290px) {
@@ -345,6 +369,10 @@
     min-height: 700px;
     max-height: 900px;
   }
+  .video_hockey .youtube_hockey {
+    min-height: 700px;
+    max-height: 900px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -370,7 +398,9 @@
   }
   .video_rugby .youtube_rugby {
     min-height: 800px;
-    max-height: 900px;
+  }
+  .video_hockey .youtube_hockey {
+    min-height: 800px;
   }
 }
 

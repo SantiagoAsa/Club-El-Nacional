@@ -1,0 +1,97 @@
+.hero_historia img {
+  width: 100%;
+}
+.hero_historia {
+  width: 100%;
+  display: none;
+}
+.cuerpo_historia {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 10px;
+  h1,
+  h2 {
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    min-width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}
+.sec_historia {
+  width: 100%;
+  margin-top: 20px;
+  .cont_par_1 {
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .cont_i_1 {
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+  .cont_par_2 {
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 20px;
+    img {
+      width: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+  .cont_i_2 {
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+  .cont_par_3 {
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.frame_historia {
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 20px;
+  height: 500px;
+  .lanueva {
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+  }
+}

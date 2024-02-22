@@ -1,0 +1,45 @@
+.sub-navbar-brand {
+  display: none;
+}
+nav ul {
+  align-items: center;
+  .nav-item {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .nav-link {
+    padding: 4px;
+  }
+  .nav-item:hover .nav-link {
+    background-color: $secondColor;
+    color: $lightColor;
+  }
+  .dropdown-menu {
+    border: none;
+    li a {
+      font-weight: bold;
+    }
+    li:hover a {
+      background-color: $secondColor;
+      color: $lightColor;
+    }
+  }
+}
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  &:focus {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+}
+.container-fluid div {
+  justify-content: end;
+}

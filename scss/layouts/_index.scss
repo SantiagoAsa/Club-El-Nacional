@@ -1,0 +1,250 @@
+// main
+
+// hero 1
+.hero {
+  background-image: none;
+}
+.escudo {
+  width: 100%;
+  display: none;
+}
+
+.hero h1 {
+  font-family: garamond;
+  text-transform: uppercase;
+  font-size: 70px;
+  color: rgb(45, 45, 86);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 100px 20px 0 20px;
+  font-weight: bold;
+  display: none;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-family: garamond;
+  font-style: italic;
+  font-size: 50px;
+  padding: 10px 10px 100px 10px;
+  color: rgb(128, 191, 228);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  margin: 0 auto;
+}
+
+// hero 2
+.hero_main {
+  width: 100%;
+  height: 100%;
+  background-color: $lightColor;
+  h3 {
+    display: none;
+  }
+  &_img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 20px solid $mainColor;
+  }
+  h4 {
+    text-transform: uppercase;
+    padding: 10px 0 0 20px;
+    margin: 5px auto;
+  }
+  .hero_subtitle {
+    padding: 0 30px;
+    margin: 0 auto;
+    span {
+      font-weight: bold;
+    }
+  }
+  .hero_p {
+    padding: 0 30px;
+    text-align: justify;
+    margin: 5px auto;
+  }
+  div {
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px 10px 0;
+  }
+  .hero_button {
+    display: inline-block;
+    justify-content: end;
+    margin-bottom: 5px;
+  }
+}
+
+// fixture slider
+.fixture_slider {
+  padding: 40px 20px;
+  max-width: 560px;
+  margin: 0 auto;
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(
+      to right,
+      #ffffff01,
+      #ffffff11,
+      #ffffff33,
+      #ffffff81,
+      #ffffff90,
+      #ffffff81,
+      #ffffff33,
+      #ffffff11,
+      #ffffff01
+    );
+  }
+}
+.carousel {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+// noticias
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px auto 0 auto;
+  width: 100%;
+  .card_container {
+    background-color: $lightColor;
+    width: 85%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    .card_news {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      div {
+        padding: 25px;
+        h4 {
+          text-transform: uppercase;
+          font-size: 25px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 15px;
+          padding-top: 10px;
+          color: $backgroundColor;
+        }
+        a {
+          display: inline-block;
+          padding: 5px 50px;
+          margin: 20px auto 20px auto;
+        }
+      }
+    }
+  }
+}
+
+// galeria
+.galery {
+  margin-top: 100px;
+  border-bottom: 20px solid $mainColor;
+  .img_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    padding-bottom: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// fomrulario
+.form {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: black;
+  border-bottom: 20px solid $mainColor;
+  padding-bottom: 50px;
+  img {
+    width: 100%;
+  }
+  form {
+    padding: 0 10px;
+  }
+}
+.form_title {
+  text-align: center;
+  font-size: 27px;
+  padding-top: 30px;
+}
+.input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  resize: none;
+}
+.data4:required {
+  border: 1px dashed red;
+}
+.term {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.submit {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.form p {
+  font-size: 12px;
+  color: $lightColor;
+  text-align: justify;
+  padding: 20px;
+}
+
+// sponsors
+.sponsors {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 50px 0;
+  margin: 0 auto;
+  background-color: $lightColor;
+  border-bottom: 20px solid $mainColor;
+}
+.sponsors_title {
+  width: 100%;
+  margin: 0 auto;
+}
+.sponsors_title h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  border-bottom: none;
+  margin: 0 auto;
+}
+.sponsors_content {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 35px 0 35px;
+}
+.img_sponsor {
+  display: inline-block;
+  width: 100px;
+  border-radius: 60px;
+  padding: 6px 12px;
+}

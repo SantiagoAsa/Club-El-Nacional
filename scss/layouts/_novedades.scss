@@ -1,0 +1,85 @@
+.container_socios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 100%;
+  .card_socios {
+    background-color: $grayColor;
+    width: 85%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    div {
+      padding: 25px;
+      h4 {
+        text-transform: uppercase;
+        font-size: 25px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 15px;
+        padding-top: 10px;
+        color: $backgroundColor;
+      }
+    }
+  }
+}
+.aside_socios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+  width: 80%;
+  gap: 20px;
+  .comision_title {
+    min-width: 300px;
+    max-width: 100%;
+    background-color: $lightColor;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  }
+  .card {
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    max-width: 100%;
+  }
+  img {
+    height: 200px;
+    object-fit: scale-down;
+  }
+  h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .span_nombre {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #3ec2ff;
+    font-weight: bold;
+  }
+  .span_puesto {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #32317e;
+    font-weight: bold;
+  }
+  .span_nro {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #32317e;
+  }
+}
