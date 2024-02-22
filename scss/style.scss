@@ -794,9 +794,12 @@ footer {
     border-radius: 25px;
     box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
+    width: 100%;
     img {
       width: 100%;
       border-radius: 25px;
+      overflow: hidden;
+      object-fit: cover;
     }
   }
   .cont_par_2 {
@@ -810,15 +813,20 @@ footer {
     img {
       width: 100%;
       border-radius: 25px;
+      overflow: hidden;
+      object-fit: cover;
     }
   }
   .cont_i_2 {
     border-radius: 25px;
     box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
+    width: 100%;
     img {
       width: 100%;
       border-radius: 25px;
+      overflow: hidden;
+      object-fit: cover;
     }
   }
   .cont_par_3 {
@@ -843,6 +851,78 @@ footer {
     width: 100%;
     border-radius: 25px;
     height: 100%;
+  }
+}
+
+// Rugby
+.hero_rugby img {
+  width: 100%;
+}
+.hero_rugby {
+  width: 100%;
+  display: none;
+}
+.description_rugby {
+  width: 80%;
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  padding: 15px;
+  margin: 0 auto;
+  p {
+    text-align: justify;
+  }
+}
+.slider_rugby {
+  width: 80%;
+  margin: 50px auto;
+  img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+  }
+}
+.article_horario_rugby {
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+  div h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+  p {
+    font-size: 14px;
+  }
+  p span {
+    font-weight: bold;
+  }
+}
+.video_rugby {
+  width: 80%;
+  height: 100%;
+  background-color: $lightColor;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  h3 {
+    text-transform: uppercase;
+  }
+  .youtube_rugby {
+    width: 90%;
+    min-height: 300px;
+    max-height: 700px;
+    margin: 0 auto;
+    padding: 20px;
   }
 }
 
@@ -878,6 +958,10 @@ footer {
     img {
       max-width: 300px;
     }
+  }
+  .video_rugby .youtube_rugby {
+    min-height: 400px;
+    max-height: 800px;
   }
 }
 
@@ -1009,6 +1093,21 @@ footer {
       height: 100%;
     }
   }
+  .slider_rugby {
+    width: 80%;
+    text-align: center;
+    img {
+      display: inline-block;
+      width: 270px;
+      height: 350px;
+      object-fit: cover;
+      margin: 10px;
+    }
+  }
+  .video_rugby .youtube_rugby {
+    min-height: 500px;
+    max-height: 800px;
+  }
 }
 
 @media (min-width: 792px) {
@@ -1097,6 +1196,10 @@ footer {
     text-shadow: 2px 4px 5px $thirdColor;
     transition: 0.3s;
   }
+  .video_rugby .youtube_rugby {
+    min-height: 600px;
+    max-height: 900px;
+  }
 }
 
 @media (min-width: 1290px) {
@@ -1145,6 +1248,10 @@ footer {
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3;
+      img {
+        min-height: 300px;
+        max-height: 500px;
+      }
     }
     .cont_par_1 p {
       font-size: 16px;
@@ -1163,6 +1270,10 @@ footer {
       grid-column-start: 1;
       grid-column-end: -1;
     }
+  }
+  .video_rugby .youtube_rugby {
+    min-height: 700px;
+    max-height: 900px;
   }
 }
 
@@ -1186,6 +1297,9 @@ footer {
     .lanueva {
       height: 100%;
     }
+  }
+  .video_rugby .youtube_rugby {
+    min-height: 800px;
   }
 }
 
