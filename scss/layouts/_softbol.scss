@@ -16,8 +16,7 @@
   padding: 50px 10px 50px 10px;
   .description_softbol {
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     font-size: 16px;
     padding: 15px;
   }
@@ -29,8 +28,7 @@
     margin: 0 auto;
     p {
       background-color: $lightColor;
-      border-radius: 25px;
-      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      @include border;
       font-size: 20px;
       text-transform: uppercase;
       padding: 15px;
@@ -38,8 +36,7 @@
       margin: 0 auto 20px auto;
     }
     img {
-      border-radius: 25px;
-      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      @include border;
       margin: 20px 10px;
       width: 100%;
     }
@@ -47,8 +44,7 @@
 }
 .article_horario_softbol {
   background-color: $lightColor;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
   text-align: center;
   width: 80%;
   max-width: 600px;
@@ -68,10 +64,9 @@
 }
 .lista_softbol {
   width: 80%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
   background-color: $lightColor;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
   max-width: 600px;
   h3 {
     font-size: 20px;

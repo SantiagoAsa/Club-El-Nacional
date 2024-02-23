@@ -91,8 +91,7 @@
     width: 80%;
     margin: 20px auto;
     img {
-      border-radius: 25px;
-      box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+      @include border;
     }
   }
   .form form {
@@ -127,8 +126,7 @@
     margin: 0 auto;
     height: 100%;
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     &_img {
       height: 550px;
       border-top-left-radius: 25px;
@@ -232,7 +230,6 @@
   }
   .container_basquet {
     gap: 10px;
-    margin: 100px auto;
   }
   .section_basquet {
     padding: 5px;

@@ -12,8 +12,7 @@
   h1,
   h2 {
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     text-align: center;
     min-width: 80%;
     margin: 0 auto;
@@ -26,15 +25,13 @@
   margin-top: 20px;
   .cont_par_1 {
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     text-align: center;
     width: 100%;
     padding: 10px 10px;
   }
   .cont_i_1 {
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     margin-top: 20px;
     width: 100%;
     img {
@@ -46,8 +43,7 @@
   }
   .cont_par_2 {
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     text-align: center;
     width: 100%;
     padding: 10px 10px;
@@ -60,8 +56,7 @@
     }
   }
   .cont_i_2 {
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     margin-top: 20px;
     width: 100%;
     img {
@@ -73,8 +68,7 @@
   }
   .cont_par_3 {
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     text-align: center;
     width: 100%;
     padding: 10px 10px;
@@ -84,8 +78,7 @@
 }
 .frame_historia {
   background-color: $lightColor;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
   text-align: center;
   margin-top: 20px;
   height: 500px;

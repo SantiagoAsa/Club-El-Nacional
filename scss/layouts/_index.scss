@@ -1,38 +1,33 @@
-// main
-
 // hero 1
-.hero {
-  background-image: none;
-}
 .escudo {
   width: 100%;
   display: none;
 }
-
-.hero h1 {
-  font-family: garamond;
-  text-transform: uppercase;
-  font-size: 70px;
-  color: rgb(45, 45, 86);
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 100px 20px 0 20px;
-  font-weight: bold;
-  display: none;
-  margin: 0 auto;
-}
-
-.hero h2 {
-  font-family: garamond;
-  font-style: italic;
-  font-size: 50px;
-  padding: 10px 10px 100px 10px;
-  color: rgb(128, 191, 228);
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  font-weight: bold;
-  display: none;
-  margin: 0 auto;
+.hero {
+  h1 {
+    font-family: garamond;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: $mainColor;
+    background-color: $lightColor;
+    text-align: center;
+    padding: 100px 20px 0 20px;
+    font-weight: bold;
+    display: none;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: garamond;
+    font-style: italic;
+    font-size: 50px;
+    padding: 10px 10px 100px 10px;
+    color: $secondColor;
+    background-color: $lightColor;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    margin: 0 auto;
+  }
 }
 
 // hero 2
@@ -102,8 +97,7 @@
   }
 }
 .carousel {
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
 }
 
 // noticias
@@ -117,10 +111,9 @@
   .card_container {
     background-color: $lightColor;
     width: 85%;
-    border-radius: 20px;
     overflow: hidden;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
     margin: 20px;
+    @include border;
     .card_news {
       img {
         width: 100%;
@@ -177,41 +170,44 @@
   }
   form {
     padding: 0 10px;
+    .form_title {
+      text-align: center;
+      font-size: 27px;
+      padding-top: 30px;
+    }
+    .input {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 0px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+      resize: none;
+    }
+    .term {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      .data4:required {
+        border: 1px dashed red;
+      }
+      label {
+        color: $lightColor;
+      }
+      .submit {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
   }
-}
-.form_title {
-  text-align: center;
-  font-size: 27px;
-  padding-top: 30px;
-}
-.input {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  border: none;
-  font-size: 14px;
-  resize: none;
-}
-.data4:required {
-  border: 1px dashed red;
-}
-.term {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-.submit {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.form p {
-  font-size: 12px;
-  color: $lightColor;
-  text-align: justify;
-  padding: 20px;
+  p {
+    font-size: 12px;
+    color: $lightColor;
+    text-align: justify;
+    padding: 20px;
+  }
 }
 
 // sponsors
@@ -223,28 +219,28 @@
   margin: 0 auto;
   background-color: $lightColor;
   border-bottom: 20px solid $mainColor;
-}
-.sponsors_title {
-  width: 100%;
-  margin: 0 auto;
-}
-.sponsors_title h3 {
-  text-transform: uppercase;
-  font-size: 40px;
-  text-align: center;
-  border-bottom: none;
-  margin: 0 auto;
-}
-.sponsors_content {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px 35px 0 35px;
-}
-.img_sponsor {
-  display: inline-block;
-  width: 100px;
-  border-radius: 60px;
-  padding: 6px 12px;
+  .sponsors_title {
+    width: 100%;
+    margin: 0 auto;
+    h3 {
+      text-transform: uppercase;
+      font-size: 40px;
+      text-align: center;
+      border-bottom: none;
+      margin: 0 auto;
+    }
+  }
+  .sponsors_content {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 35px 0 35px;
+    .img_sponsor {
+      display: inline-block;
+      width: 120px;
+      border-radius: 60px;
+      padding: 6px 12px;
+    }
+  }
 }

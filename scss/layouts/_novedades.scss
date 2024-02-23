@@ -8,9 +8,8 @@
   .card_socios {
     background-color: $grayColor;
     width: 85%;
-    border-radius: 25px;
     overflow: hidden;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     margin: 20px;
     img {
       width: 100%;
@@ -43,12 +42,10 @@
     min-width: 300px;
     max-width: 100%;
     background-color: $lightColor;
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
   }
   .card {
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    @include border;
     min-width: 300px;
     max-width: 100%;
   }

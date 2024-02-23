@@ -1,18 +1,9 @@
-.hero_basquet img {
-  width: 100%;
-}
-
 .hero_basquet {
   width: 100%;
   display: none;
-}
-
-.main_container {
-  background-image: url(../assets/img/fondogradient.png);
-  background-size: cover;
-  background-attachment: fixed;
-  padding-bottom: 20px;
-  border-bottom: 20px solid $mainColor;
+  img {
+    width: 100%;
+  }
 }
 
 .basquet_news {
@@ -69,11 +60,10 @@
   font-size: 16px;
   padding: 16px;
   margin: 0;
-  background-color: #424242;
-  color: rgb(200, 200, 200);
+  background-color: $lightColor;
+  color: $backgroundColor;
   text-align: center;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
 }
 
 .slider_basquet {
@@ -93,8 +83,7 @@
   width: 100%;
   position: relative;
   transition: all 400ms;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
 }
 
 .slider_basquet img:nth-child(3) {
@@ -126,10 +115,9 @@
   height: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(200, 200, 200);
-  background-color: #424242;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  color: $backgroundColor;
+  background-color: $lightColor;
+  @include border;
 }
 
 .horario {
@@ -143,16 +131,15 @@
 }
 
 .horario article {
-  background-color: #424242;
+  background-color: $lightColor;
   height: 100%;
   padding: 5px;
-  border-radius: 25px;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  @include border;
 }
 
 .horario article p {
   font-size: 16px;
-  color: rgb(200, 200, 200);
+  color: $backgroundColor;
   text-align: center;
   margin: 0;
   padding: 20px;

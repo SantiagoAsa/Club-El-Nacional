@@ -12,6 +12,7 @@ main {
   background-image: url(../assets/img/fondogradient.png);
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 50px;
 }
 
 .sub-navbar-brand {
@@ -156,10 +157,6 @@ footer {
   width: 30px;
 }
 
-.hero {
-  background-image: none;
-}
-
 .escudo {
   width: 100%;
   display: none;
@@ -169,22 +166,21 @@ footer {
   font-family: garamond;
   text-transform: uppercase;
   font-size: 70px;
-  color: rgb(45, 45, 86);
-  background-color: rgb(255, 255, 255);
+  color: #2d2d56;
+  background-color: #ffffff;
   text-align: center;
   padding: 100px 20px 0 20px;
   font-weight: bold;
   display: none;
   margin: 0 auto;
 }
-
 .hero h2 {
   font-family: garamond;
   font-style: italic;
   font-size: 50px;
   padding: 10px 10px 100px 10px;
-  color: rgb(128, 191, 228);
-  background-color: rgb(255, 255, 255);
+  color: #80bfe4;
+  background-color: #ffffff;
   text-align: center;
   font-weight: bold;
   display: none;
@@ -260,10 +256,10 @@ footer {
 .news .card_container {
   background-color: #ffffff;
   width: 85%;
-  border-radius: 20px;
   overflow: hidden;
-  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
   margin: 20px;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
 }
 .news .card_container .card_news img {
   width: 100%;
@@ -316,14 +312,12 @@ footer {
 .form form {
   padding: 0 10px;
 }
-
-.form_title {
+.form form .form_title {
   text-align: center;
   font-size: 27px;
   padding-top: 30px;
 }
-
-.input {
+.form form .input {
   margin-top: 20px;
   width: 100%;
   padding: 10px;
@@ -333,23 +327,22 @@ footer {
   font-size: 14px;
   resize: none;
 }
-
-.data4:required {
-  border: 1px dashed red;
-}
-
-.term {
+.form form .term {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
-
-.submit {
+.form form .term .data4:required {
+  border: 1px dashed red;
+}
+.form form .term label {
+  color: #ffffff;
+}
+.form form .term .submit {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
 .form p {
   font-size: 12px;
   color: #ffffff;
@@ -366,50 +359,37 @@ footer {
   background-color: #ffffff;
   border-bottom: 20px solid #2d2d56;
 }
-
-.sponsors_title {
+.sponsors .sponsors_title {
   width: 100%;
   margin: 0 auto;
 }
-
-.sponsors_title h3 {
+.sponsors .sponsors_title h3 {
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
   border-bottom: none;
   margin: 0 auto;
 }
-
-.sponsors_content {
+.sponsors .sponsors_content {
   width: 100%;
   display: inline-block;
   text-align: center;
   margin: 0 auto;
   padding: 20px 35px 0 35px;
 }
-
-.img_sponsor {
+.sponsors .sponsors_content .img_sponsor {
   display: inline-block;
-  width: 100px;
+  width: 120px;
   border-radius: 60px;
   padding: 6px 12px;
-}
-
-.hero_basquet img {
-  width: 100%;
 }
 
 .hero_basquet {
   width: 100%;
   display: none;
 }
-
-.main_container {
-  background-image: url(../assets/img/fondogradient.png);
-  background-size: cover;
-  background-attachment: fixed;
-  padding-bottom: 20px;
-  border-bottom: 20px solid #2d2d56;
+.hero_basquet img {
+  width: 100%;
 }
 
 .basquet_news {
@@ -466,8 +446,8 @@ footer {
   font-size: 16px;
   padding: 16px;
   margin: 0;
-  background-color: #424242;
-  color: rgb(200, 200, 200);
+  background-color: #ffffff;
+  color: #303030;
   text-align: center;
   border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
@@ -523,8 +503,8 @@ footer {
   height: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(200, 200, 200);
-  background-color: #424242;
+  color: #303030;
+  background-color: #ffffff;
   border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
 }
@@ -540,7 +520,7 @@ footer {
 }
 
 .horario article {
-  background-color: #424242;
+  background-color: #ffffff;
   height: 100%;
   padding: 5px;
   border-radius: 25px;
@@ -549,7 +529,7 @@ footer {
 
 .horario article p {
   font-size: 16px;
-  color: rgb(200, 200, 200);
+  color: #303030;
   text-align: center;
   margin: 0;
   padding: 20px;
@@ -626,7 +606,7 @@ footer {
   border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
   padding: 15px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
   text-align: center;
 }
 .video_hockey h3 {
@@ -702,7 +682,7 @@ footer {
   border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
   padding: 15px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
   text-align: center;
 }
 .video_rugby h3 {
@@ -789,7 +769,7 @@ footer {
 
 .lista_softbol {
   width: 80%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
@@ -821,8 +801,8 @@ footer {
 .container_socios .card_socios {
   background-color: #cecece;
   width: 85%;
-  border-radius: 25px;
   overflow: hidden;
+  border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
   margin: 20px;
 }
@@ -1225,7 +1205,6 @@ footer {
   }
   .container_basquet {
     gap: 10px;
-    margin: 100px auto;
   }
   .section_basquet {
     padding: 5px;
