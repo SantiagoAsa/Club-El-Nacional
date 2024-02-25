@@ -139,6 +139,15 @@
     padding-bottom: 50px;
   }
 
+  .container_softbol {
+    .container_players {
+      img {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
   .hero_basquet {
     width: 100%;
     display: block;
@@ -152,7 +161,6 @@
   .hero_hockey {
     width: 100%;
     display: block;
-    padding-bottom: 50px;
   }
   .hero_historia {
     width: 100%;
@@ -181,7 +189,6 @@
     max-height: 800px;
   }
   .slider_hockey {
-    width: 80%;
     text-align: center;
     img {
       display: inline-block;
@@ -318,6 +325,9 @@
   .basquet_news {
     width: 75%;
   }
+  .container_basquet {
+    width: 75%;
+  }
   .main_socios {
     grid-template-columns: 70% 30%;
   }
@@ -374,7 +384,7 @@
 
 @media (min-width: 1400px) {
   .container_basquet {
-    padding: 0;
+    padding: 100px 0 0 0;
   }
   .slider_basquet {
     grid-template-columns: repeat(5, 1fr);
@@ -443,5 +453,18 @@
   }
   .cont_par_3 p {
     font-size: 20px;
+  }
+  .slider_hockey {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    img {
+      margin: 0;
+    }
+  }
+  .img_sliderHockey {
+    margin: 0;
   }
 }

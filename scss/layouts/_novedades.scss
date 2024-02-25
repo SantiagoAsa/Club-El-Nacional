@@ -12,8 +12,7 @@
     @include border;
     margin: 20px;
     img {
-      width: 100%;
-      height: auto;
+      @include img(100%, auto);
     }
     div {
       padding: 25px;

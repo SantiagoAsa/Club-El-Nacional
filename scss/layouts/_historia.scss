@@ -15,7 +15,7 @@
     @include border;
     text-align: center;
     min-width: 80%;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     padding: 10px 20px;
     text-transform: uppercase;
   }
@@ -32,8 +32,7 @@
   }
   .cont_i_1 {
     @include border;
-    margin-top: 20px;
-    width: 100%;
+    @extend .sec_historia;
     img {
       width: 100%;
       border-radius: 25px;
@@ -44,10 +43,9 @@
   .cont_par_2 {
     background-color: $lightColor;
     @include border;
+    @extend .sec_historia;
     text-align: center;
-    width: 100%;
     padding: 10px 10px;
-    margin-top: 20px;
     img {
       width: 100%;
       border-radius: 25px;
@@ -57,8 +55,7 @@
   }
   .cont_i_2 {
     @include border;
-    margin-top: 20px;
-    width: 100%;
+    @extend .sec_historia;
     img {
       width: 100%;
       border-radius: 25px;
@@ -69,11 +66,10 @@
   .cont_par_3 {
     background-color: $lightColor;
     @include border;
+    @extend .sec_historia;
     text-align: center;
-    width: 100%;
     padding: 10px 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
 .frame_historia {
