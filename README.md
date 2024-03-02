@@ -1,6 +1,5 @@
-﻿<span>![</span><span>Escudo del Club El Nacional sobre fondo de cancha de basquet</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/SantiagoAsa/Club-El-Nacional/main/assets/img/hero/hero1.jpg</span><span>)</span>
-
 # CLub El Nacional
+﻿![Escudo del Club El Nacional sobre fondo de cancha de basquet](https://github.com/SantiagoAsa/Club-El-Nacional/blob/main/assets/img/hero/hero1.jpg?raw=true)
 
 Sitio web dedicado al club El Nacional de Bahía Blanca y a las actividades que desarrolla.
 
@@ -28,6 +27,6 @@ Quiero agradecer al profesor de la cursada, Fernando Alarcón, por la paciencia,
 
 ##### Autor
 
-<span>![</span><span>Este soy yo</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/SantiagoAsa/Club-El-Nacional/main/assets/img/icons/yo.jpg</span><span>)</span>
+![Este soy yo](https://github.com/SantiagoAsa/Club-El-Nacional/blob/main/assets/img/icons/yo.jpg?raw=true)
 
 - [@SantiagoAsa](https://www.github.com/SantiagoAsa)
