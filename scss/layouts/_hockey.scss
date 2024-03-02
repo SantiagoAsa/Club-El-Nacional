@@ -1,3 +1,4 @@
+// hero
 .hero_hockey img {
   width: 100%;
 }
@@ -6,6 +7,7 @@
   display: none;
 }
 
+// descripción
 .container_hockey {
   display: grid;
   grid-template-columns: 1fr;
@@ -21,6 +23,7 @@
     padding: 15px;
   }
 }
+
 // fixed button
 .fixed_hockey {
   position: fixed;
@@ -93,6 +96,7 @@
   }
 }
 
+// iframe youtube
 .video_hockey {
   width: 80%;
   height: auto;

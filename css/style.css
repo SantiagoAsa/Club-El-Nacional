@@ -839,6 +839,22 @@ footer {
   font-weight: bold;
 }
 
+.carousel_rugby {
+  width: 80%;
+  margin: 50px auto;
+}
+.carousel_rugby p {
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3019607843);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto 20px auto;
+}
+
 .video_rugby {
   width: 80%;
   height: auto;
@@ -999,7 +1015,6 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
-  height: 100%;
 }
 
 .container_socios {
@@ -1484,6 +1499,9 @@ footer {
     min-height: 600px;
     max-height: 900px;
   }
+  .carousel_rugby {
+    width: 70%;
+  }
 }
 @media (min-width: 1290px) {
   .hero_main {
@@ -1526,6 +1544,10 @@ footer {
     grid-template-rows: auto;
     gap: 15px;
     margin-bottom: 50px;
+  }
+  .sec_historia .cont_par_1 p {
+    column-count: 2;
+    font-size: 20px;
   }
   .sec_historia .cont_i_1 {
     margin-top: 0;
@@ -1633,6 +1655,9 @@ footer {
     padding: 10px 10px;
     font-size: 20px;
   }
+  .carousel_rugby {
+    width: 60%;
+  }
 }
 @media (min-width: 1660px) {
   .hero_main {
@@ -1686,6 +1711,15 @@ footer {
   }
   .basquet_news_img {
     height: 800px;
+  }
+  .carousel_rugby {
+    width: 60%;
+  }
+  .sec_historia .cont_par_1 p {
+    padding: 30px;
+  }
+  .sec_historia .cont_par_2 p {
+    padding: 30px;
   }
 }
 

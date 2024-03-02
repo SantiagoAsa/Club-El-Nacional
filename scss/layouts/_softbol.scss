@@ -1,3 +1,4 @@
+// hero
 .hero_softbol img {
   width: 100%;
 }
@@ -6,6 +7,7 @@
   display: none;
 }
 
+// descripción e imagenes
 .container_softbol {
   display: grid;
   grid-template-columns: 1fr;
@@ -84,6 +86,7 @@
   }
 }
 
+// horario
 .article_horario_softbol {
   background-color: $lightColor;
   @include border;
@@ -104,6 +107,8 @@
     font-weight: bold;
   }
 }
+
+// iframe spotify
 .lista_softbol {
   width: 80%;
   margin: 0 auto;
@@ -122,6 +127,5 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
-    height: 100%;
   }
 }
