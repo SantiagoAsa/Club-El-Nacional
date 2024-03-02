@@ -311,6 +311,18 @@
   .carousel_rugby {
     width: 70%;
   }
+  .description_rugby p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .description_hockey p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .description_softbol p {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
 
 @media (min-width: 1290px) {
@@ -344,6 +356,9 @@
   .basquet_news {
     &_img {
       height: 700px;
+    }
+    &_p {
+      font-size: 18px;
     }
   }
   .main_socios {
