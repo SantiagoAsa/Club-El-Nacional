@@ -24,15 +24,16 @@
   right: 20px;
   z-index: 9;
   text-align: end;
+  visibility: hidden;
   .fixed_p_r {
     background-color: $lightColor;
     color: $darkColor;
-    opacity: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px;
     @include border;
+    display: inline-block;
   }
   &_ball {
     @include img(80px, 80px);
@@ -43,11 +44,8 @@
     display: inline-block;
     border-radius: 100%;
     &:hover {
-      scale: (1.4);
+      scale: (1.2);
       transition: 0.5s;
-    }
-    &:hover .fixed p {
-      opacity: 1;
     }
   }
 }
@@ -83,7 +81,7 @@
     color: $mainColor;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
   p span {
     font-weight: bold;
@@ -91,20 +89,22 @@
 }
 .video_rugby {
   width: 80%;
-  height: 100%;
-  background-color: $lightColor;
-  @include border;
-  padding: 15px;
+  height: auto;
   margin: 0 auto;
   text-align: center;
   h3 {
     text-transform: uppercase;
+    background-color: $lightColor;
+    padding: 20px;
+    @include border;
+    margin-bottom: 20px;
   }
   .youtube_rugby {
-    width: 90%;
+    width: 100%;
     min-height: 300px;
     max-height: 700px;
+    object-fit: cover;
     margin: 0 auto;
-    padding: 20px;
+    @include border;
   }
 }

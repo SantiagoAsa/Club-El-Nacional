@@ -11,9 +11,7 @@
       name="keywords"
       content="Club El Nacional, Deportes, Rugby, Hockey, Softbol, Softball, Tenis, Gimnasia Artística, Patín, Básquet, Basket, Basquetball, Basketball, CEN, Celeste, Club América, Club Nacional, Actividad, Disciplina, Técnica, Táctica, Preparación física, ABB, CABB, Historia, Bahía Blanca, Pileta, Colonia de vacaciones, Canchas, Socios, Femenino, Masculino, Niños, Niñas, Descuentos, Beneficios"
     />
-    <link rel="icon" type="image/png" href="assets/img/iconcen.png" />
-    <!-- link css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/icons/iconcen.png" />
     <!-- link bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -21,6 +19,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -170,7 +170,7 @@
         <h3>Noticia principal</h3>
         <img
           class="hero_main_img"
-          src="assets/img/basquetse.jpg"
+          src="assets/img/index/basquet.jpg"
           alt="Jugador de basquet del club el nacional picando la pelota en ataque"
         />
         <h4>Victoria en casa</h4>
@@ -191,7 +191,7 @@
       </section>
       <!-- fixed button -->
       <a class="fixed_button" href="#navbar">
-        <img src="assets/img/subir.png" alt="botón para subir" />
+        <img src="assets/img/fixedbuttons/subir.png" alt="botón para subir" />
       </a>
       <!-- slider -->
       <section class="fixture_slider">
@@ -314,7 +314,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/rugbypretemporada.jpg"
+              src="assets/img/index/rugbypretemporada.jpg"
               alt="Equipo de rugby del club el nacional reunido en círculo, charla previa al juego"
             />
             <div>
@@ -335,7 +335,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/hockeybicampeon.jpg"
+              src="assets/img/index/hockeybicampeon.jpg"
               alt="Festejos del plantel superior de hockey del club el nacional categoría caballeros, luego de salir campeónes del torneo clausura 2023 - ABH"
             />
             <div>
@@ -358,7 +358,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/softbolnews.jpg"
+              src="assets/img/index/softbolnews.jpg"
               alt="Vista aérea de la cancha de softbol dentro de la quinta del club el nacional"
             />
             <div>
@@ -380,7 +380,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/hockeynoticia.jpg"
+              src="assets/img/index/hockeynoticia.jpg"
               alt="Yazmín Pallottini mostrando la medalla dorada de campeona del mundo para la selección argentian de hockey femenino sub 21"
             />
             <div>
@@ -403,7 +403,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/bienestar.jpg"
+              src="assets/img/index/bienestar.jpg"
               alt="Beneficio para socios del club el nacional en la veterinaria bienestar animal"
             />
             <div>
@@ -424,7 +424,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/rugbynoticia.jpg"
+              src="assets/img/index/rugbynoticia.jpg"
               alt="Ulises Alonso y Juan Fueyo posando abrazados para la foto"
             />
             <div>
@@ -446,7 +446,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/softbolcampeones.jpg"
+              src="assets/img/index/softbolcampeones.jpg"
               alt="Equipo de softbol del club el nacional posando para foto de equipo en torneo Copa Revolución de Mayo realizada en Los Toldos, provincia de Buenos Aires"
             />
             <div>
@@ -471,7 +471,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/camiseta.jpg"
+              src="assets/img/index/camiseta.jpg"
               alt="Imagen de la nueva camiseta que vestirá la categorpia superior de básquet femenino del club el nacional"
             />
             <div>
@@ -489,7 +489,7 @@
         <section class="card_container">
           <article class="card_news">
             <img
-              src="assets/img/index/redimensionadas/macro.jpg"
+              src="assets/img/index/macro.jpg"
               alt="Beneficios para socios del club el nacional abonando la cuota por débito automático a través del banco Macro"
             />
             <div>
@@ -561,14 +561,14 @@
         </article>
       </section>
       <!-- formulario -->
-      <section class="form" id="contacto">
+      <section class="form">
         <article class="img_formulario">
           <img
             src="assets/img/index/asociate.jpg"
             alt="Logo del club El Nacional rodeado de un atleta de cada disciplina"
           />
         </article>
-        <form>
+        <form id="contacto">
           <h5 class="form_title">ESCRIBINOS</h5>
           <input
             class="input"
@@ -626,46 +626,54 @@
           <h3>Nuestros Sponsors</h3>
         </div>
         <div class="sponsors_content">
-          <img class="img_sponsor" src="assets/img/remax.png" alt="remax" />
           <img
             class="img_sponsor"
-            src="assets/img/bienestar-animal.png"
+            src="assets/img/sponsor/remax.png"
+            alt="remax"
+          />
+          <img
+            class="img_sponsor"
+            src="assets/img/sponsor/bienestar-animal.png"
             alt="veterinaria bienestar animal"
           />
           <img
             class="img_sponsor"
-            src="assets/img/coca-cola.png"
+            src="assets/img/sponsor/coca-cola.png"
             alt="coca cola"
           />
           <img
             class="img_sponsor"
-            src="assets/img/powerade.png"
+            src="assets/img/sponsor/powerade.png"
             alt="powerade"
           />
           <img
             class="img_sponsor"
-            src="assets/img/mcdonalds.png"
+            src="assets/img/sponsor/mcdonalds.png"
             alt="mcdonalds"
           />
-          <img class="img_sponsor" src="assets/img/1888.png" alt="sidra 1888" />
           <img
             class="img_sponsor"
-            src="assets/img/imperial.png"
+            src="assets/img/sponsor/1888.png"
+            alt="sidra 1888"
+          />
+          <img
+            class="img_sponsor"
+            src="assets/img/sponsor/imperial.png"
             alt="cerveza imperial"
           />
           <img
             class="img_sponsor"
-            src="assets/img/sancor-seguros.png"
+            src="assets/img/sponsor/sancor-seguros.png"
             alt="sancor seguros"
           />
           <img
             class="img_sponsor"
-            src="assets/img/ferreshop.png"
+            src="assets/img/sponsor/ferreshop.png"
             alt="ferreteria ferre shop"
           />
           <img
             class="img_sponsor"
-            src="assets/img/surland.png"
+            src="assets/img/sponsor/surland.png"
             alt="surland viajes y turismo"
           />
         </div>
@@ -676,7 +684,7 @@
       <a href="index.html"
         ><img
           class="footer_logo"
-          src="assets/img/escudocen.png"
+          src="assets/img/icons/escudocen.png"
           alt="escudo cen"
       /></a>
       <div class="footer_list">
@@ -731,25 +739,25 @@
         <a href="https://facebook.com/CENoficial" target="_blank"
           ><img
             class="media_icon"
-            src="assets/img/facebookicon.png"
+            src="assets/img/icons/facebookicon.png"
             alt="facebook"
         /></a>
         <a href="https://twitter.com/Cen1919" target="_blank"
           ><img
             class="media_icon"
-            src="assets/img/twittericon.png"
+            src="assets/img/icons/twittericon.png"
             alt="twitter"
         /></a>
         <a href="https://www.instagram.com/cenoficial/" target="_blank"
           ><img
             class="media_icon"
-            src="assets/img/instagramicon.png"
+            src="assets/img/icons/instagramicon.png"
             alt="instagram"
         /></a>
         <a href="https://w.app/IXQ15u" target="_blank"
           ><img
             class="media_icon"
-            src="assets/img/whatsappicon.png"
+            src="assets/img/icons/whatsappicon.png"
             alt="whatsapp"
         /></a>
       </section>
